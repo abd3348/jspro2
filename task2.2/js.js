@@ -1,9 +1,16 @@
 //1
+// function reversesNum(x) {
+//     return (x.toString().split("").reverse().join(""));
+// }
 function reversesNum(x) {
-    return (x.toString().split("").reverse().join(""));
+    for(let i = x.length-1;i>=0;i--){
+        document.write(x[i]);
+    }
 }
-let x = 56678;
-document.write(reversesNum(x));
+
+
+let x = prompt("enter the number: ");
+reversesNum(x);
 
 // //2
 // for(let i = 0;i<=15;i++){
